@@ -4,7 +4,7 @@ import { StreamingServers } from '@consumet/extensions/dist/models';
 
 const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
   const multimovies = new MOVIES.MultiMovies(process.env.MULTIMOVIES_URL);
-  let baseUrl = 'https://multimovies.life';
+  let baseUrl = 'https://multimovies.world';
   if (process.env.MULTIMOVIES_URL) {
     baseUrl = `https://${process.env.MULTIMOVIES_URL}`;
   }
